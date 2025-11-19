@@ -1,5 +1,5 @@
 export const aboutMeCard = {
-  image: require("../assets/Kiara.png"),
+  image: require("../assets/images/Kiara.png"),
   title: "Descripción sobre mí!",
   description: "Desarrolladora Junior, quiero creer.",
 };
