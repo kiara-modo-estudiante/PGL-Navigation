@@ -1,26 +1,13 @@
 import React from "react";
 import { View, Text, StyleSheet } from "react-native";
+import { globalStyles } from "../theme/styles";
 
 const Home = () => {
   return (
-    <View style={styles.container}>
-      <Text style={styles.text}>Welcome to my portfolio</Text>
+    <View style={globalStyles.body}>
+      <Text>Welcome to my portfolio</Text>
     </View>
   );
 };
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-    backgroundColor: "#fff",
-  },
-  text: {
-    fontSize: 20,
-    fontWeight: "bold",
-    color: "#333",
-  },
-});
 
 export default Home;
