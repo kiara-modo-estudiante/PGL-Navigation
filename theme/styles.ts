@@ -23,6 +23,7 @@ export const globalStyles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "space-between",
     height: "85%",
+    paddingTop: 15,
   },
   list: {
     borderColor: lightColorPalette.border,
