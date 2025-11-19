@@ -7,7 +7,14 @@ export default function Layout() {
         name="index"
         options={{
           drawerLabel: "Home",
-          title: "overview",
+          title: "Home",
+        }}
+      />
+      <Drawer.Screen
+        name="about"
+        options={{
+          drawerLabel: "About Me",
+          title: "About Me",
         }}
       />
     </Drawer>
