@@ -3,7 +3,7 @@ import { StyleSheet, View } from "react-native";
 import QRCode from "react-native-qrcode-svg";
 import { globalStyles } from "../theme/styles";
 import Card from "../components/Card";
-import { githubCard } from "../data/socials";
+import { githubCard, githubLink } from "../data/socials";
 
 const Repo = () => {
   return (
@@ -14,7 +14,7 @@ const Repo = () => {
         bodyText={githubCard.description}
       />
       <View style={styles.qrCode}>
-        <QRCode value="https://github.com/kiaramaldonado" />
+        <QRCode value={githubLink} />
       </View>
     </View>
   );
