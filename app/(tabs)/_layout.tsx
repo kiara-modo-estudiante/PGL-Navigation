@@ -8,12 +8,7 @@ export default function Layout() {
   const segments = useSegments();
   const currentTab = segments[segments.length - 1];
 
-  const cardData =
-    currentTab === "about"
-      ? aboutMeCard
-      : currentTab === "repo"
-      ? githubCard
-      : null;
+  const cardData = currentTab === "repo" ? githubCard : aboutMeCard;
 
   return (
     <>
