@@ -2,11 +2,17 @@ import React from "react";
 import { StyleSheet, View } from "react-native";
 import QRCode from "react-native-qrcode-svg";
 import { globalStyles } from "../../theme/styles";
-import { githubLink } from "../../data/socials";
+import { githubCard, githubLink } from "../../data/socials";
+import Card from "../../components/Card";
 
 const Repo = () => {
   return (
     <View style={globalStyles.body}>
+      <Card
+        title={githubCard.title}
+        imageSource={githubCard.image}
+        bodyText={githubCard.description}
+      />
       <View style={styles.qrCode}>
         <QRCode value={githubLink} />
       </View>
