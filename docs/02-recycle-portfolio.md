@@ -30,3 +30,29 @@ En primer lugar, he debido de instalar la dependencia `react-native-qrcode-svg` 
 Entonces, utilizando la estructura de carpetas ya creada anteriormente, he añadido los datos en /data y agregado la misma página `Repo`creada en en el proyecto anterior a la carpeta /app.
 
 > Como podemos ver, las tarjetas presentes en la parte superior de la aplicación utilizan el mismo tipado declarado en /types como CardItem.
+
+## Componente como Cabecera (Card)
+
+He diseñado en el proyecto anterior y traído a éste el componente `Card` para mostrar una cabecera de portfolio. Incluye una imagen (por ejemplo, una foto de perfil), título y una descripción.
+
+### Props
+
+El componente `Card` acepta las siguientes propiedades, definidas por el tipo `CardItem`:
+
+- **`title`** (string): El título o nombre que se mostrará de forma destacada en la tarjeta.
+- **`imageSource`** (`ImageSourcePropType`): La fuente de la imagen que se mostrará, típicamente una foto de perfil o avatar.
+- **`bodyText`** (string): Una descripción o texto adicional para proporcionar más contexto sobre la persona o el portfolio.
+
+### Uso
+
+Este componente es ideal para crear una cabecera de portfolio que combine una imagen y una breve descripción. Puede ser estilizado adicionalmente para ajustarse al tema general de la aplicación.
+
+### Ejemplo
+
+```jsx
+<Card
+  title="Mi Portfolio"
+  imageSource={require("./path/to/image.jpg")}
+  bodyText="Desarrollador apasionado por la tecnología y el diseño."
+/>
+```
