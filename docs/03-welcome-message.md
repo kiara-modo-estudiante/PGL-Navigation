@@ -27,7 +27,17 @@ Los estilos de la pantalla están definidos en el archivo `index.tsx` utilizando
 
 ## Navegación
 
-El botón utiliza el hook `useRouter` de `expo-router` para manejar la navegación dentro de la aplicación.
+El botón utiliza el hook `useRouter` de `expo-router` para manejar la navegación dentro de la aplicación. Este hook nos permite acceder a un objeto `router` que contiene métodos útiles para gestionar las rutas.
+
+### Implementación de la navegación
+
+En el archivo `index.tsx`, se utiliza el siguiente código para configurar la navegación del botón:
+
+1. **Importación del hook**: Se importa `useRouter` desde `expo-router`.
+2. **Creación del objeto `router`**: Se inicializa con `const router = useRouter();`.
+3. **Método `router.navigate`**: Se utiliza `router.navigate('/portfolio')` para navegar a la ruta `/portfolio` cuando el botón es presionado.
+
+Este enfoque asegura una navegación fluida y permite mantener el código modular y reutilizable.
 
 ## Captura de Pantalla
 
