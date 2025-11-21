@@ -21,7 +21,6 @@ export const globalStyles = StyleSheet.create({
   body: {
     width: "100%",
     alignItems: "center",
-    justifyContent: "space-between",
     height: "85%",
     paddingTop: 15,
   },
