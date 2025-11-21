@@ -1,24 +1,18 @@
 import { FontAwesome5 } from "@expo/vector-icons";
-import { Tabs, useSegments } from "expo-router";
+import { Tabs } from "expo-router";
 import Card from "../../components/Card";
 import { aboutMeCard } from "../../data/about";
-import { githubCard } from "../../data/socials";
+import { StyleSheet, View } from "react-native";
+import { globalStyles } from "../../theme/styles";
 
 export default function Layout() {
-  const segments = useSegments();
-  const currentTab = segments[segments.length - 1];
-
-  const cardData = currentTab === "repo" ? githubCard : aboutMeCard;
-
   return (
     <>
-      {cardData && (
-        <Card
-          title={cardData.title}
-          imageSource={cardData.image}
-          bodyText={cardData.description}
-        />
-      )}
+      <Card
+        title={aboutMeCard.title}
+        imageSource={aboutMeCard.image}
+        bodyText={aboutMeCard.description}
+      />
       <Tabs>
         <Tabs.Screen
           name="about"
