@@ -9,7 +9,7 @@ const List = () => {
       <Text style={styles.title}>{interests.title}</Text>
       <ScrollView style={styles.scrollContainer}>
         {interests.list.map((item, index) => (
-          <Text key={index} style={globalStyles.list}>
+          <Text key={index} style={styles.list}>
             {item}
           </Text>
         ))}
@@ -30,5 +30,17 @@ const styles = StyleSheet.create({
   },
   scrollContainer: {
     padding: 10,
+  },
+  list: {
+    borderColor: lightColorPalette.border,
+    borderWidth: 1,
+    borderStyle: "dashed",
+    padding: 20,
+    color: lightColorPalette.text,
+    textAlign: "center",
+    fontWeight: "bold",
+    fontStyle: "italic",
+    fontSize: 16,
+    backgroundColor: lightColorPalette.lightGray,
   },
 });

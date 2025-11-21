@@ -25,16 +25,4 @@ export const globalStyles = StyleSheet.create({
     height: "85%",
     paddingTop: 15,
   },
-  list: {
-    borderColor: lightColorPalette.border,
-    borderWidth: 1,
-    borderStyle: "dashed",
-    padding: 20,
-    color: lightColorPalette.text,
-    textAlign: "center",
-    fontWeight: "bold",
-    fontStyle: "italic",
-    fontSize: 16,
-    backgroundColor: lightColorPalette.lightGray,
-  },
 });
