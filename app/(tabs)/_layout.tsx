@@ -2,8 +2,6 @@ import { FontAwesome5 } from "@expo/vector-icons";
 import { Tabs } from "expo-router";
 import Card from "../../components/Card";
 import { aboutMeCard } from "../../data/about";
-import { StyleSheet, View } from "react-native";
-import { globalStyles } from "../../theme/styles";
 
 export default function Layout() {
   return (
