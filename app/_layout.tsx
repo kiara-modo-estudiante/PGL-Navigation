@@ -17,6 +17,13 @@ export default function Layout() {
           title: "Portfolio",
         }}
       />
+      <Drawer.Screen
+        name="books"
+        options={{
+          drawerLabel: "Libros",
+          title: "Libros",
+        }}
+      />
     </Drawer>
   );
 }
