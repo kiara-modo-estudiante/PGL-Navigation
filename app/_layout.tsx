@@ -10,13 +10,6 @@ export default function Layout() {
           title: "Home",
         }}
       />
-      <Drawer.Screen
-        name="about"
-        options={{
-          drawerLabel: "About Me",
-          title: "About Me",
-        }}
-      />
     </Drawer>
   );
 }
