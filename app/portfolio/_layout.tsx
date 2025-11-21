@@ -16,7 +16,7 @@ export default function Layout() {
           name="about"
           options={{
             headerShown: false,
-            title: "About Me",
+            title: "Sobre Mí",
             tabBarIcon: () => <FontAwesome5 name="user" size={20} />,
             tabBarLabelStyle: { fontSize: 16 },
           }}
@@ -25,7 +25,7 @@ export default function Layout() {
           name="repo"
           options={{
             headerShown: false,
-            title: "Repository",
+            title: "Repositorio",
             tabBarIcon: () => <FontAwesome5 name="globe" size={20} />,
             tabBarLabelStyle: { fontSize: 16 },
           }}
