@@ -1,3 +1,5 @@
+[<- Volver al README](../README.md)
+
 # Reclicaje del Portfolio de la Unidad Anterior
 
 En la unidad anterior de la asignatura se refactorizó un portfolio, cambiando tambien sus valores para fuera un portfolio propio.
@@ -5,7 +7,7 @@ Aquí muestro el proyecto anterior a reciclar:
 
 | ![Hobbies](./images/02-doc/hobbies_before.jpeg) | ![Repo](./images/02-doc/repo_before.jpeg) |
 | ----------------------------------------------- | ----------------------------------------- |
-| Pantalla de inicio                              | Despliegue de drawer                      |
+| Pantalla de Hobbies                             | Pantalla de Repo                          |
 
 A continuación, explicaré como he reclijado dicho repositorio paso a paso para incluirlo en esta práctica con navegación
 
@@ -77,3 +79,11 @@ En esta práctica, se ha implementado un sistema de navegación basado en pesta�
 - **`_layout.tsx` (directorio raíz)**: Define un sistema de navegación tipo drawer para la aplicación, con "Home" y "Portfolio" como secciones principales.
 
 > El sistema asegura que el encabezado del portfolio (definido en el componente `Card`) sea visible en todo momento mientras se navega entre las pantallas "About Me" y "Repository".
+
+## Captura del Resultado Final
+
+| ![Hobbies](./images/02-doc/hobbies_after.jpeg) | ![Repo](./images/02-doc/repo_after.jpeg) |
+| ---------------------------------------------- | ---------------------------------------- |
+| Pantalla de Hobbies                            | Pantalla de Repo                         |
+
+[<- Volver al README](../README.md)
