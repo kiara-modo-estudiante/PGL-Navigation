@@ -10,6 +10,13 @@ export default function Layout() {
           title: "Home",
         }}
       />
+      <Drawer.Screen
+        name="portfolio"
+        options={{
+          drawerLabel: "Portfolio",
+          title: "Portfolio",
+        }}
+      />
     </Drawer>
   );
 }
