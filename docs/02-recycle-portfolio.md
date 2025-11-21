@@ -56,3 +56,24 @@ Este componente es ideal para crear una cabecera de portfolio que combine una im
   bodyText="Desarrollador apasionado por la tecnología y el diseño."
 />
 ```
+
+## Navegación con Tabs
+
+En esta práctica, se ha implementado un sistema de navegación basado en pestañas para el portfolio. Este sistema permite alternar entre dos pantallas principales: "About Me" y "Repository".
+
+### Estructura de Archivos
+
+- **`/portfolio/_layout.tsx`**: Define la navegación por pestañas para la sección del portfolio utilizando el componente `Tabs` de `expo-router`. Contiene dos pestañas:
+
+  1. **"About Me"**: Enlazada al archivo `about.tsx`.
+  2. **"Repository"**: Enlazada al archivo `repo.tsx`.
+
+  Cada pestaña incluye un icono y una etiqueta personalizada.
+
+- **`about.tsx`**: Representa la pantalla "About Me", donde se muestra una lista de elementos utilizando el componente `List`.
+
+- **`repo.tsx`**: Representa la pantalla "Repository", donde se muestra una tarjeta con información sobre el repositorio de GitHub y un código QR que enlaza al mismo.
+
+- **`_layout.tsx` (directorio raíz)**: Define un sistema de navegación tipo drawer para la aplicación, con "Home" y "Portfolio" como secciones principales.
+
+> El sistema asegura que el encabezado del portfolio (definido en el componente `Card`) sea visible en todo momento mientras se navega entre las pantallas "About Me" y "Repository".
