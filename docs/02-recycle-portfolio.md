@@ -1,6 +1,7 @@
 # Reclicaje del Portfolio de la Unidad Anterior
 
 En la unidad anterior de la asignatura se refactorizó un portfolio, cambiando tambien sus valores para fuera un portfolio propio.
+Aquí muestro el proyecto anterior a reciclar:
 
 | ![Hobbies](./images/02-doc/hobbies_before.jpeg) | ![Repo](./images/02-doc/repo_before.jpeg) |
 | ----------------------------------------------- | ----------------------------------------- |
@@ -21,3 +22,11 @@ En el proyecto anterior, el código fue separado en diversos componentes para un
 - `components`: lo cual compondrán la pantalla visualizada, como Card (para la información breve mostrada en la parte superior) y List (para los hobbies).
 
 Poco a poco, he añadido estos ficheros ya existentes en esta aplicación. La única diferencia es que ahora se manejará diferente la navegación entre esta pantalla y la siguiente.
+
+## Pantalla de Repositorio (QR)
+
+En primer lugar, he debido de instalar la dependencia `react-native-qrcode-svg` para poder generar el código QR hacia mi perfil de GitHub.
+
+Entonces, utilizando la estructura de carpetas ya creada anteriormente, he añadido los datos en /data y agregado la misma página `Repo`creada en en el proyecto anterior a la carpeta /app.
+
+> Como podemos ver, las tarjetas presentes en la parte superior de la aplicación utilizan el mismo tipado declarado en /types como CardItem.
