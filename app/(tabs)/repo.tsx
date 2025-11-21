@@ -1,9 +1,9 @@
 import React from "react";
 import { StyleSheet, View } from "react-native";
 import QRCode from "react-native-qrcode-svg";
-import { globalStyles } from "../theme/styles";
-import Card from "../components/Card";
-import { githubCard, githubLink } from "../data/socials";
+import { globalStyles } from "../../theme/styles";
+import Card from "../../components/Card";
+import { githubCard, githubLink } from "../../data/socials";
 
 const Repo = () => {
   return (
